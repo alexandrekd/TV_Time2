@@ -51,12 +51,14 @@ class MainActivity : AppCompatActivity() {
 
         //binding = ActivityMainBinding.inflate(layoutInflater)
         //setContentView(binding.root)
-        prepareRecyclerView()
+
+
+        /*prepareRecyclerView()
         viewModel = ViewModelProvider(this)[DashboardViewModel::class.java]
         viewModel.getPopularMovies()
         viewModel.observeMovieLiveData().observe(this, Observer { movieList ->
             movieAdapter.setMovieList(movieList)
-        })
+        })*/
 
         val resultat = RetrofitInstance.movieService.getPopularMovies("9ebb909aaf76048c85007618c28b505f")
         resultat.enqueue(object : retrofit2.Callback<MoviesTest> {
@@ -86,13 +88,13 @@ class MainActivity : AppCompatActivity() {
 
 
 
-    private fun prepareRecyclerView() {
+    /*private fun prepareRecyclerView() {
         movieAdapter = MovieAdapter()
         binding.rvMovies.apply {
             layoutManager = GridLayoutManager(applicationContext,2)
             adapter = movieAdapter
         }
-    }
+    }*/
 }
 
 
