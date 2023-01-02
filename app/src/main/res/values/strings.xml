@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TV_Time</string>
+    <string name="title_series">Séries</string>
+    <string name="title_films">Films</string>
+    <string name="title_decouvrir">Découvrir</string>
+    <string name="title_profil">Profil</string>
+    <string name="Profil">Profil</string>
+</resources>
